@@ -1,0 +1,59 @@
+<div class="container">
+  <h1>Criar Cartão de Visitas</h1>
+
+  <form (ngSubmit)="enviarFormulario()">
+    <div class="form-section">
+      <h2>Informações Pessoais</h2>
+
+      <div class="form-group">
+        <label>Nome:</label>
+        <input type="text" [(ngModel)]="dadosUsuario.nome" name="nome" />
+      </div>
+
+      <div class="form-group">
+        <label>Idade:</label>
+        <input type="number" [(ngModel)]="dadosUsuario.idade" name="idade" />
+      </div>
+
+      <div class="form-group">
+        <label>Telefone:</label>
+        <input type="tel" [(ngModel)]="dadosUsuario.telefone" name="telefone" />
+      </div>
+
+      <div class="form-group">
+        <label>E-mail:</label>
+        <input type="email" [(ngModel)]="dadosUsuario.email" name="email" />
+      </div>
+    </div>
+
+    <div class="form-section">
+      <h2>Informações de Endereço</h2>
+
+      <div class="form-group">
+        <label>Endereço:</label>
+        <input
+          type="text"
+          [(ngModel)]="dadosUsuario.endereco"
+          name="endereco"
+        />
+      </div>
+
+      <div class="form-group">
+        <label>Número:</label>
+        <input type="text" [(ngModel)]="dadosUsuario.numero" name="numero" />
+      </div>
+
+      <div class="form-group">
+        <label>Bairro:</label>
+        <input type="text" [(ngModel)]="dadosUsuario.bairro" name="bairro" />
+      </div>
+
+      <div class="form-group">
+        <label>Cidade:</label>
+        <input type="text" [(ngModel)]="dadosUsuario.cidade" name="cidade" />
+      </div>
+    </div>
+
+    <button type="submit" class="submit-btn">Gerar Cartão</button>
+  </form>
+</div>

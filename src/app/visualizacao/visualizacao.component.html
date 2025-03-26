@@ -1,0 +1,24 @@
+<div class="container">
+  <div *ngIf="dadosCartao" class="business-card">
+    <div class="card-header">
+      <h1>{{ dadosCartao.nome }}</h1>
+      <p>Idade: {{ dadosCartao.idade }} anos</p>
+    </div>
+
+    <div class="card-body">
+      <h2>Contato:</h2>
+      <p><strong>Telefone:</strong> {{ dadosCartao.telefone }}</p>
+      <p><strong>E-mail:</strong> {{ dadosCartao.email }}</p>
+    </div>
+
+    <div class="card-footer">
+      <h2>Endereço:</h2>
+      <p>{{ dadosCartao.endereco }}, {{ dadosCartao.numero }}</p>
+      <p>{{ dadosCartao.bairro }} - {{ dadosCartao.cidade }}</p>
+    </div>
+
+    <button (click)="editarNovamente()" class="edit-btn">
+      Editar Novamente
+    </button>
+  </div>
+</div>

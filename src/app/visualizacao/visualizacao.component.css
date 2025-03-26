@@ -1,0 +1,65 @@
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.business-card {
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  padding: 30px;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.card-header {
+  text-align: center;
+  margin-bottom: 25px;
+  border-bottom: 1px solid #eee;
+  padding-bottom: 20px;
+}
+
+.card-header h1 {
+  color: #333;
+  margin: 0;
+}
+
+.card-body,
+.card-footer {
+  margin-bottom: 25px;
+}
+
+.card-footer {
+  border-top: 1px solid #eee;
+  padding-top: 20px;
+}
+
+h2 {
+  color: #444;
+  font-size: 18px;
+  margin-top: 0;
+}
+
+p {
+  margin: 8px 0;
+  color: #555;
+}
+
+.edit-btn {
+  background-color: #fbbc05;
+  color: #333;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+  display: block;
+  width: 100%;
+  margin-top: 20px;
+  transition: background-color 0.3s;
+}
+
+.edit-btn:hover {
+  background-color: #e8ac04;
+}
